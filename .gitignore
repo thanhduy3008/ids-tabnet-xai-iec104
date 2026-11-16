@@ -1,0 +1,30 @@
+# Data (CC BY-NC-SA 4.0 dataset: download from Zenodo, do not redistribute)
+data/
+*.csv
+*.pcap
+*.tgz
+
+# Models and artifacts
+*.pkl
+*.zip
+*.pt
+
+# Secrets
+.env
+*.key
+
+# Python / notebooks
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Keep small result files
+!results/*.csv
+!results/*.json
