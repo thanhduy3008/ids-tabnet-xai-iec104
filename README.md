@@ -50,6 +50,12 @@ Held-out test set (47,996 flows), single split:
 
 5-fold stratified CV (Macro F1, mean ± std): TabNet **0.8749 ± 0.0372**, TabNet + SMOTE **0.8928 ± 0.0377**.
 
+Confusion matrix of TabNet + SMOTE on the test set (log colour scale). Most errors are `portscanattack` flows predicted as `dosattack` (163 flows).
+
+![Confusion matrix, TabNet + SMOTE](results/figures/confusion_matrix_tabnet_smote.png)
+
+Raw numbers are in [`results/`](results/): `final_model_comparison.csv` (16 models), `results_tabnet_smote_single_split.json` and `kfold_tabnet_results.json` (5-fold CV, per fold and per class).
+
 **Honest reading of the numbers**
 
 - TabNet is competitive on accuracy and AUC but **does not beat tree ensembles on Macro F1**. The value of this project is the explainability and error analysis, not a leaderboard win.
@@ -64,6 +70,16 @@ Held-out test set (47,996 flows), single split:
 | 2 | SHAP: beeswarm / bar, per-class heatmap, waterfall | dashboard pages 2–3 |
 | 2 | LIME for single predictions | dashboard page 4 |
 | – | SHAP waterfall of the most frequent misclassification | dashboard page 5 |
+
+Attention per attack class (top 15 features). For example `CWR Flag Count` stands out for `ntpddosattack` and `RST Flag Count` for `iec104starvationattack`:
+
+![TabNet attention per attack class](results/figures/att_per_class.png)
+
+Attention per decision step (TabNet uses 5 sequential steps, each attending to a different group of features):
+
+![TabNet attention per decision step](results/figures/att_per_step.png)
+
+Agreement between attention and SHAP rankings: Overlap@10 = 60%, Spearman ρ = 0.64.
 
 ## Repository layout
 

@@ -1,0 +1,411 @@
+{
+    "n_splits": 5,
+    "model": "TabNet",
+    "max_epochs_used": 50,
+    "patience_used": 8,
+    "note": "max_epochs/patience giảm so với cấu hình gốc (100/15) để khả thi về thời gian trên CPU",
+    "total_runtime_min": 154.3,
+    "fold_results": [
+        {
+            "fold": 1,
+            "train_time_sec": 1625.7,
+            "n_epochs_actual": 16,
+            "accuracy": 0.995968435033987,
+            "macro_precision": 0.8758939022933456,
+            "macro_recall": 0.8956115581232054,
+            "macro_f1": 0.8650542124921777,
+            "weighted_precision": 0.9961122754053353,
+            "weighted_recall": 0.995968435033987,
+            "weighted_f1": 0.9958939835064379,
+            "macro_auc": 0.9959330460241271,
+            "per_class_precision": {
+                "attackfree": 0.7538461538461538,
+                "dosattack": 0.996467240194956,
+                "floodattack": 1.0,
+                "fuzzyattack": 0.934010152284264,
+                "iec104starvationattack": 0.9922680412371134,
+                "mitmattack": 0.3333333333333333,
+                "ntpddosattack": 0.9978070175438597,
+                "portscanattack": 0.9994192799070848
+            },
+            "per_class_recall": {
+                "attackfree": 0.9607843137254902,
+                "dosattack": 1.0,
+                "floodattack": 0.5909090909090909,
+                "fuzzyattack": 0.9787234042553191,
+                "iec104starvationattack": 0.9482758620689655,
+                "mitmattack": 0.8,
+                "ntpddosattack": 1.0,
+                "portscanattack": 0.8861997940267765
+            },
+            "per_class_f1": {
+                "attackfree": 0.8448275862068966,
+                "dosattack": 0.9982304944784874,
+                "floodattack": 0.7428571428571429,
+                "fuzzyattack": 0.9558441558441558,
+                "iec104starvationattack": 0.9697732997481109,
+                "mitmattack": 0.47058823529411764,
+                "ntpddosattack": 0.9989023051591658,
+                "portscanattack": 0.9394104803493449
+            },
+            "per_class_support": {
+                "attackfree": 51,
+                "dosattack": 60926,
+                "floodattack": 22,
+                "fuzzyattack": 188,
+                "iec104starvationattack": 406,
+                "mitmattack": 5,
+                "ntpddosattack": 455,
+                "portscanattack": 1942
+            }
+        },
+        {
+            "fold": 2,
+            "train_time_sec": 1633.0,
+            "n_epochs_actual": 18,
+            "accuracy": 0.9883739100540676,
+            "macro_precision": 0.7888916482266644,
+            "macro_recall": 0.8863266292910252,
+            "macro_f1": 0.8261142254429841,
+            "weighted_precision": 0.9911575022488668,
+            "weighted_recall": 0.9883739100540676,
+            "weighted_f1": 0.9891889746542465,
+            "macro_auc": 0.9896453060771693,
+            "per_class_precision": {
+                "attackfree": 0.5617977528089888,
+                "dosattack": 0.9995025040628834,
+                "floodattack": 0.5833333333333334,
+                "fuzzyattack": 1.0,
+                "iec104starvationattack": 0.9973614775725593,
+                "mitmattack": 0.42857142857142855,
+                "ntpddosattack": 0.9977876106194691,
+                "portscanattack": 0.7427790788446527
+            },
+            "per_class_recall": {
+                "attackfree": 0.9803921568627451,
+                "dosattack": 0.9892656665463021,
+                "floodattack": 0.6666666666666666,
+                "fuzzyattack": 0.9521276595744681,
+                "iec104starvationattack": 0.9310344827586207,
+                "mitmattack": 0.6,
+                "ntpddosattack": 0.9912087912087912,
+                "portscanattack": 0.9799176107106076
+            },
+            "per_class_f1": {
+                "attackfree": 0.7142857142857143,
+                "dosattack": 0.9943577391361732,
+                "floodattack": 0.6222222222222222,
+                "fuzzyattack": 0.9754768392370572,
+                "iec104starvationattack": 0.9630573248407643,
+                "mitmattack": 0.5,
+                "ntpddosattack": 0.9944873208379272,
+                "portscanattack": 0.8450266429840142
+            },
+            "per_class_support": {
+                "attackfree": 51,
+                "dosattack": 60926,
+                "floodattack": 21,
+                "fuzzyattack": 188,
+                "iec104starvationattack": 406,
+                "mitmattack": 5,
+                "ntpddosattack": 455,
+                "portscanattack": 1942
+            }
+        },
+        {
+            "fold": 3,
+            "train_time_sec": 1845.0,
+            "n_epochs_actual": 23,
+            "accuracy": 0.9959371191049161,
+            "macro_precision": 0.8964528422416109,
+            "macro_recall": 0.8828574747490199,
+            "macro_f1": 0.8886742880484404,
+            "weighted_precision": 0.9959359130869417,
+            "weighted_recall": 0.9959371191049161,
+            "weighted_f1": 0.995812935152152,
+            "macro_auc": 0.9997937189002987,
+            "per_class_precision": {
+                "attackfree": 0.9433962264150944,
+                "dosattack": 0.9960924088092474,
+                "floodattack": 0.8636363636363636,
+                "fuzzyattack": 0.9788359788359788,
+                "iec104starvationattack": 0.9925925925925926,
+                "mitmattack": 0.4,
+                "ntpddosattack": 1.0,
+                "portscanattack": 0.9970691676436108
+            },
+            "per_class_recall": {
+                "attackfree": 0.9803921568627451,
+                "dosattack": 0.9999835863766926,
+                "floodattack": 0.9047619047619048,
+                "fuzzyattack": 0.9893048128342246,
+                "iec104starvationattack": 0.9901477832512315,
+                "mitmattack": 0.3333333333333333,
+                "ntpddosattack": 0.9890350877192983,
+                "portscanattack": 0.8759011328527292
+            },
+            "per_class_f1": {
+                "attackfree": 0.9615384615384616,
+                "dosattack": 0.9980342048358561,
+                "floodattack": 0.8837209302325582,
+                "fuzzyattack": 0.9840425531914894,
+                "iec104starvationattack": 0.9913686806411838,
+                "mitmattack": 0.36363636363636365,
+                "ntpddosattack": 0.9944873208379272,
+                "portscanattack": 0.9325657894736842
+            },
+            "per_class_support": {
+                "attackfree": 51,
+                "dosattack": 60925,
+                "floodattack": 21,
+                "fuzzyattack": 187,
+                "iec104starvationattack": 406,
+                "mitmattack": 6,
+                "ntpddosattack": 456,
+                "portscanattack": 1942
+            }
+        },
+        {
+            "fold": 4,
+            "train_time_sec": 2083.8,
+            "n_epochs_actual": 26,
+            "accuracy": 0.9962496484045379,
+            "macro_precision": 0.9273428008661142,
+            "macro_recall": 0.969512012050722,
+            "macro_f1": 0.9374811157175291,
+            "weighted_precision": 0.9963012931174229,
+            "weighted_recall": 0.9962496484045379,
+            "weighted_f1": 0.9961523395368161,
+            "macro_auc": 0.9997621021307174,
+            "per_class_precision": {
+                "attackfree": 0.9803921568627451,
+                "dosattack": 0.996238941670891,
+                "floodattack": 0.9523809523809523,
+                "fuzzyattack": 0.9946808510638298,
+                "iec104starvationattack": 0.995049504950495,
+                "mitmattack": 0.5,
+                "ntpddosattack": 1.0,
+                "portscanattack": 1.0
+            },
+            "per_class_recall": {
+                "attackfree": 0.9803921568627451,
+                "dosattack": 0.9999671727533853,
+                "floodattack": 0.9090909090909091,
+                "fuzzyattack": 0.9946808510638298,
+                "iec104starvationattack": 0.9925925925925926,
+                "mitmattack": 1.0,
+                "ntpddosattack": 0.9978070175438597,
+                "portscanattack": 0.8815653964984552
+            },
+            "per_class_f1": {
+                "attackfree": 0.9803921568627451,
+                "dosattack": 0.998099575681122,
+                "floodattack": 0.9302325581395349,
+                "fuzzyattack": 0.9946808510638298,
+                "iec104starvationattack": 0.9938195302843016,
+                "mitmattack": 0.6666666666666666,
+                "ntpddosattack": 0.9989023051591658,
+                "portscanattack": 0.9370552818828681
+            },
+            "per_class_support": {
+                "attackfree": 51,
+                "dosattack": 60925,
+                "floodattack": 22,
+                "fuzzyattack": 188,
+                "iec104starvationattack": 405,
+                "mitmattack": 5,
+                "ntpddosattack": 456,
+                "portscanattack": 1942
+            }
+        },
+        {
+            "fold": 5,
+            "train_time_sec": 1986.6,
+            "n_epochs_actual": 24,
+            "accuracy": 0.9879207425696159,
+            "macro_precision": 0.851308292592266,
+            "macro_recall": 0.8787793012420235,
+            "macro_f1": 0.8569702621388307,
+            "weighted_precision": 0.9903103478930478,
+            "weighted_recall": 0.9879207425696159,
+            "weighted_f1": 0.9886641414294847,
+            "macro_auc": 0.9992527234006549,
+            "per_class_precision": {
+                "attackfree": 0.9074074074074074,
+                "dosattack": 0.9987075179373311,
+                "floodattack": 0.5666666666666667,
+                "fuzzyattack": 0.9393939393939394,
+                "iec104starvationattack": 0.9974619289340102,
+                "mitmattack": 0.6666666666666666,
+                "ntpddosattack": 0.9978021978021978,
+                "portscanattack": 0.7363600159299084
+            },
+            "per_class_recall": {
+                "attackfree": 0.9607843137254902,
+                "dosattack": 0.9892654903569963,
+                "floodattack": 0.7727272727272727,
+                "fuzzyattack": 0.9893617021276596,
+                "iec104starvationattack": 0.9703703703703703,
+                "mitmattack": 0.4,
+                "ntpddosattack": 0.9956140350877193,
+                "portscanattack": 0.9521112255406797
+            },
+            "per_class_f1": {
+                "attackfree": 0.9333333333333333,
+                "dosattack": 0.9939640813364777,
+                "floodattack": 0.6538461538461539,
+                "fuzzyattack": 0.9637305699481865,
+                "iec104starvationattack": 0.983729662077597,
+                "mitmattack": 0.5,
+                "ntpddosattack": 0.9967069154774972,
+                "portscanattack": 0.830451381091399
+            },
+            "per_class_support": {
+                "attackfree": 51,
+                "dosattack": 60925,
+                "floodattack": 22,
+                "fuzzyattack": 188,
+                "iec104starvationattack": 405,
+                "mitmattack": 5,
+                "ntpddosattack": 456,
+                "portscanattack": 1942
+            }
+        }
+    ],
+    "summary": {
+        "accuracy_mean": 0.9928899710334249,
+        "accuracy_std": 0.0038765325306289147,
+        "macro_precision_mean": 0.8679778972440003,
+        "macro_precision_std": 0.04675508082229839,
+        "macro_recall_mean": 0.9026173950911993,
+        "macro_recall_std": 0.03390595744240497,
+        "macro_f1_mean": 0.8748588207679923,
+        "macro_f1_std": 0.03716069269428075,
+        "weighted_f1_mean": 0.9931424748558275,
+        "weighted_f1_std": 0.003448103176179408,
+        "macro_auc_mean": 0.9968773793065935,
+        "macro_auc_std": 0.003890078932545046,
+        "per_class_summary": {
+            "attackfree": {
+                "precision_mean": 0.829367939468078,
+                "precision_std": 0.1544009507174746,
+                "recall_mean": 0.972549019607843,
+                "recall_std": 0.009605842128561448,
+                "f1_mean": 0.8868754504454301,
+                "f1_std": 0.09801378923574887,
+                "fold_f1_values": [
+                    0.8448275862068966,
+                    0.7142857142857143,
+                    0.9615384615384616,
+                    0.9803921568627451,
+                    0.9333333333333333
+                ]
+            },
+            "dosattack": {
+                "precision_mean": 0.9974017225350618,
+                "precision_std": 0.0014183091112223475,
+                "recall_mean": 0.9956963832066752,
+                "recall_std": 0.005250740357076024,
+                "f1_mean": 0.9965372190936235,
+                "f1_std": 0.001945264853438238,
+                "fold_f1_values": [
+                    0.9982304944784874,
+                    0.9943577391361732,
+                    0.9980342048358561,
+                    0.998099575681122,
+                    0.9939640813364777
+                ]
+            },
+            "floodattack": {
+                "precision_mean": 0.7932034632034632,
+                "precision_std": 0.18353608133124183,
+                "recall_mean": 0.7688311688311689,
+                "recall_std": 0.1266956910463817,
+                "f1_mean": 0.7665758014595224,
+                "f1_std": 0.12215974726383638,
+                "fold_f1_values": [
+                    0.7428571428571429,
+                    0.6222222222222222,
+                    0.8837209302325582,
+                    0.9302325581395349,
+                    0.6538461538461539
+                ]
+            },
+            "fuzzyattack": {
+                "precision_mean": 0.9693841843156024,
+                "precision_std": 0.027630862711333436,
+                "recall_mean": 0.9808396859711003,
+                "recall_std": 0.015262503670152496,
+                "f1_mean": 0.9747549938569436,
+                "f1_std": 0.013877876793231667,
+                "fold_f1_values": [
+                    0.9558441558441558,
+                    0.9754768392370572,
+                    0.9840425531914894,
+                    0.9946808510638298,
+                    0.9637305699481865
+                ]
+            },
+            "iec104starvationattack": {
+                "precision_mean": 0.9949467090573542,
+                "precision_std": 0.0022309249483769378,
+                "recall_mean": 0.9664842182083561,
+                "recall_std": 0.02385347638776072,
+                "f1_mean": 0.9803496995183917,
+                "f1_std": 0.01204296381162523,
+                "fold_f1_values": [
+                    0.9697732997481109,
+                    0.9630573248407643,
+                    0.9913686806411838,
+                    0.9938195302843016,
+                    0.983729662077597
+                ]
+            },
+            "mitmattack": {
+                "precision_mean": 0.46571428571428564,
+                "precision_std": 0.11382446604440885,
+                "recall_mean": 0.6266666666666667,
+                "recall_std": 0.248014336503177,
+                "f1_mean": 0.5001782531194296,
+                "f1_std": 0.09719846925989427,
+                "fold_f1_values": [
+                    0.47058823529411764,
+                    0.5,
+                    0.36363636363636365,
+                    0.6666666666666666,
+                    0.5
+                ]
+            },
+            "ntpddosattack": {
+                "precision_mean": 0.9986793651931054,
+                "precision_std": 0.0010783127430185088,
+                "recall_mean": 0.9947329863119337,
+                "recall_std": 0.004070708725699191,
+                "f1_mean": 0.9966972334943366,
+                "f1_std": 0.001974446947009698,
+                "fold_f1_values": [
+                    0.9989023051591658,
+                    0.9944873208379272,
+                    0.9944873208379272,
+                    0.9989023051591658,
+                    0.9967069154774972
+                ]
+            },
+            "portscanattack": {
+                "precision_mean": 0.8951255084650512,
+                "precision_std": 0.12703092192142906,
+                "recall_mean": 0.9151390319258497,
+                "recall_std": 0.04258518188226675,
+                "f1_mean": 0.8969019151562622,
+                "f1_std": 0.048575508738530136,
+                "fold_f1_values": [
+                    0.9394104803493449,
+                    0.8450266429840142,
+                    0.9325657894736842,
+                    0.9370552818828681,
+                    0.830451381091399
+                ]
+            }
+        }
+    }
+}
